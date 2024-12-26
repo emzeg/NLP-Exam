@@ -1,0 +1,43 @@
+{
+    "siteVersion": 3,
+    "request": {
+        "application": {
+            "name": "jupyter-all-spark",
+            "version": "4.3.1"
+        },
+        "product": {
+            "id": "uc1-gc1-4",
+            "category": "uc1-gc1",
+            "provider": "aau-k8"
+        },
+        "name": "NLP project day 1",
+        "replicas": 1,
+        "parameters": {
+        },
+        "resources": [
+            {
+                "type": "file",
+                "path": "/960799",
+                "readOnly": false
+            }
+        ],
+        "timeAllocation": {
+            "hours": 4,
+            "minutes": 0,
+            "seconds": 0
+        },
+        "resolvedProduct": null,
+        "resolvedApplication": null,
+        "resolvedSupport": null,
+        "allowDuplicateJob": true,
+        "sshEnabled": false
+    },
+    "resolvedResources": {
+        "ingress": {
+        }
+    },
+    "machineType": {
+        "cpu": 4,
+        "memoryInGigs": 16
+    }
+}

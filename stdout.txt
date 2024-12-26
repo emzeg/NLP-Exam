@@ -1,0 +1,542 @@
+
+==================  
+ Start JupyterLab  
+==================  
+
+[I 2024-12-23 14:34:38.100 ServerApp] ipyparallel | extension was successfully linked.
+[I 2024-12-23 14:34:38.100 ServerApp] jupyter_lsp | extension was successfully linked.
+[I 2024-12-23 14:34:38.104 ServerApp] jupyter_server_mathjax | extension was successfully linked.
+[I 2024-12-23 14:34:38.106 ServerApp] jupyter_server_terminals | extension was successfully linked.
+[W 2024-12-23 14:34:38.107 LabApp] 'token' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2024-12-23 14:34:38.109 ServerApp] ServerApp.token config is deprecated in 2.0. Use IdentityProvider.token.
+[I 2024-12-23 14:34:38.109 ServerApp] jupyterlab | extension was successfully linked.
+[I 2024-12-23 14:34:38.109 ServerApp] jupyterlab_code_formatter | extension was successfully linked.
+[I 2024-12-23 14:34:38.109 ServerApp] jupyterlab_git | extension was successfully linked.
+[I 2024-12-23 14:34:38.109 ServerApp] nbdime | extension was successfully linked.
+[I 2024-12-23 14:34:38.110 ServerApp] Writing Jupyter server cookie secret to /home/ucloud/.local/share/jupyter/runtime/jupyter_cookie_secret
+[I 2024-12-23 14:34:38.113 ServerApp] notebook_shim | extension was successfully linked.
+[W 2024-12-23 14:34:38.125 ServerApp] All authentication is disabled.  Anyone who can connect to this server will be able to run code.
+[I 2024-12-23 14:34:38.126 ServerApp] notebook_shim | extension was successfully loaded.
+[I 2024-12-23 14:34:38.127 ServerApp] Loading IPython parallel extension
+[I 2024-12-23 14:34:38.127 ServerApp] ipyparallel | extension was successfully loaded.
+[I 2024-12-23 14:34:38.129 ServerApp] jupyter_lsp | extension was successfully loaded.
+[I 2024-12-23 14:34:38.129 ServerApp] jupyter_server_mathjax | extension was successfully loaded.
+[I 2024-12-23 14:34:38.130 ServerApp] jupyter_server_terminals | extension was successfully loaded.
+[I 2024-12-23 14:34:38.133 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.12/site-packages/jupyterlab
+[I 2024-12-23 14:34:38.133 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 2024-12-23 14:34:38.133 LabApp] Extension Manager is 'pypi'.
+[I 2024-12-23 14:34:38.144 ServerApp] jupyterlab | extension was successfully loaded.
+[I 2024-12-23 14:34:38.145 ServerApp] Registered jupyterlab_code_formatter server extension
+[I 2024-12-23 14:34:38.145 ServerApp] jupyterlab_code_formatter | extension was successfully loaded.
+[I 2024-12-23 14:34:38.148 ServerApp] jupyterlab_git | extension was successfully loaded.
+[I 2024-12-23 14:34:38.188 ServerApp] nbdime | extension was successfully loaded.
+[I 2024-12-23 14:34:38.188 ServerApp] Serving notebooks from local directory: /work
+[I 2024-12-23 14:34:38.188 ServerApp] Jupyter Server 2.14.2 is running at:
+[I 2024-12-23 14:34:38.188 ServerApp] http://j-5150647-job-0:8888/lab
+[I 2024-12-23 14:34:38.188 ServerApp]     http://127.0.0.1:8888/lab
+[I 2024-12-23 14:34:38.188 ServerApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 2024-12-23 14:34:40.248 ServerApp] Skipped non-installed server(s): bash-language-server, dockerfile-language-server-nodejs, javascript-typescript-langserver, jedi-language-server, julia-language-server, pyright, python-language-server, python-lsp-server, r-languageserver, sql-language-server, texlab, typescript-language-server, unified-language-server, vscode-css-languageserver-bin, vscode-html-languageserver-bin, vscode-json-languageserver-bin, yaml-language-server
+[I 2024-12-23 14:34:45.850 ServerApp] 302 GET / (@10.14.0.171) 0.76ms
+[W 2024-12-23 14:34:50.525 LabApp] Could not determine jupyterlab build status without nodejs
+[I 2024-12-23 14:34:54.627 ServerApp] Creating new notebook in 
+[I 2024-12-23 14:34:54.693 ServerApp] Writing notebook-signing key to /home/ucloud/.local/share/jupyter/notebook_secret
+[I 2024-12-23 14:34:55.188 ServerApp] Kernel started: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 14:34:55.707 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 14:34:55.768 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 14:34:55.833 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[W 2024-12-23 14:34:59.043 ServerApp.jupyterlab_git] Fail to execute ['git', 'rev-parse', '--show-prefix']
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 189, in execute
+        code, output, error = await current_loop.run_in_executor(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 150, in call_subprocess
+        process = subprocess.Popen(
+                  ^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1955, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/EmmaRoseHahn'
+[E 2024-12-23 14:34:59.044 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 14:34:59.044 ServerApp] 500 POST /git/EmmaRoseHahn/show_prefix?1734960823628 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 2.79ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb
+[W 2024-12-23 14:35:05.245 ServerApp] Notebook EmmaRoseHahn#8090/class_5.ipynb is not trusted
+[I 2024-12-23 14:35:05.661 ServerApp] Kernel started: fdbc5f8d-6069-47c8-9190-8c7a39111eae
+[I 2024-12-23 14:35:06.082 ServerApp] Connecting to kernel fdbc5f8d-6069-47c8-9190-8c7a39111eae.
+[W 2024-12-23 14:35:29.805 ServerApp.jupyterlab_git] Fail to execute ['git', 'rev-parse', '--show-prefix']
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 189, in execute
+        code, output, error = await current_loop.run_in_executor(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 150, in call_subprocess
+        process = subprocess.Popen(
+                  ^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1955, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/EmmaRoseHahn'
+[E 2024-12-23 14:35:29.806 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 14:35:29.806 ServerApp] 500 POST /git/EmmaRoseHahn/show_prefix?1734960854390 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 2.05ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb
+[W 2024-12-23 14:35:32.972 ServerApp.jupyterlab_git] Fail to execute ['git', 'rev-parse', '--show-prefix']
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 189, in execute
+        code, output, error = await current_loop.run_in_executor(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 150, in call_subprocess
+        process = subprocess.Popen(
+                  ^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1955, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/EmmaRoseHahn'
+[E 2024-12-23 14:35:32.973 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 14:35:32.973 ServerApp] 500 POST /git/EmmaRoseHahn/show_prefix?1734960857556 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 1.75ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb
+[I 2024-12-23 14:36:55.061 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-23 14:37:05.374 ServerApp] Saving file at /EmmaRoseHahn#8090/class_5.ipynb
+[I 2024-12-23 14:37:47.237 ServerApp] Saving file at /Untitled.ipynb
+[E 2024-12-23 14:37:47.405 ServerApp] Uncaught exception POST /api/contents/Untitled.ipynb/checkpoints?1734960991982 (10.14.0.171)
+    HTTPServerRequest(protocol='http', host='app-5150647-0.cloud.aau.dk', method='POST', uri='/api/contents/Untitled.ipynb/checkpoints?1734960991982', version='HTTP/1.1', remote_ip='10.14.0.171')
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/handlers.py", line 357, in post
+        checkpoint = await ensure_async(cm.create_checkpoint(path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/manager.py", line 1085, in create_checkpoint
+        return await self.checkpoints.create_checkpoint(self, path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 141, in create_checkpoint
+        return await self.checkpoint_model(checkpoint_id, dest_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 151, in checkpoint_model
+        stats = await run_sync(os.stat, os_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+        return await get_async_backend().run_sync_in_worker_thread(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+        return await future
+               ^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+        result = context.run(func, *args)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/.ipynb_checkpoints/Untitled-checkpoint.ipynb'
+[W 2024-12-23 14:37:47.523 ServerApp] wrote error: 'Unhandled error'
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/handlers.py", line 357, in post
+        checkpoint = await ensure_async(cm.create_checkpoint(path))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/manager.py", line 1085, in create_checkpoint
+        return await self.checkpoints.create_checkpoint(self, path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 141, in create_checkpoint
+        return await self.checkpoint_model(checkpoint_id, dest_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filecheckpoints.py", line 151, in checkpoint_model
+        stats = await run_sync(os.stat, os_path)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+        return await get_async_backend().run_sync_in_worker_thread(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2441, in run_sync_in_worker_thread
+        return await future
+               ^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 943, in run
+        result = context.run(func, *args)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/.ipynb_checkpoints/Untitled-checkpoint.ipynb'
+[E 2024-12-23 14:37:47.524 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 14:37:47.524 ServerApp] 500 POST /api/contents/Untitled.ipynb/checkpoints?1734960991982 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 130.22ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Untitled.ipynb
+[I 2024-12-23 14:38:42.317 ServerApp] Uploading file to /A relation of the strange witchcraft in the Village Mohra, in the years 1669- 1670.txt
+[I 2024-12-23 14:38:59.455 ServerApp] Uploading file to /An account of what happened to a boy at Malmoe by witchcraft in the year 1678.txt
+[I 2024-12-23 14:39:01.741 ServerApp] Uploading file to /Innocent VIII BULL Summis desiderantes Dec. 5th 1484.txt
+[I 2024-12-23 14:39:04.052 ServerApp] Uploading file to /Johannes Nider the ANT HILL circa 1437.txt
+[I 2024-12-23 14:39:06.639 ServerApp] Uploading file to /translation of the Canon Episcopi the year 906.txt
+[I 2024-12-23 14:39:15.302 ServerApp] Uploading file to /Malleus Maleficarum combined.pdf
+[I 2024-12-23 14:39:23.377 ServerApp] Saving file at /Malleus Maleficarum combined.pdf
+[I 2024-12-23 14:39:23.599 ServerApp] Uploading file to /16th century defence of witchcraft.pdf
+[I 2024-12-23 14:39:23.821 ServerApp] Saving file at /16th century defence of witchcraft.pdf
+[I 2024-12-23 14:39:37.271 ServerApp] New terminal with automatic name: 1
+[I 2024-12-23 14:39:47.483 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:41:47.799 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:43:48.482 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:45:48.964 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:47:49.422 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:53:51.578 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:55:51.799 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:56:19.856 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:56:25.660 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 14:56:25.694 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 14:56:25.726 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 14:56:25.726 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 14:57:53.347 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 14:59:56.865 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:02:02.543 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:04:08.309 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:06:15.473 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:08:17.593 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:10:17.914 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:14:18.167 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:14:33.110 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:14:45.541 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:14:45.585 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:14:45.627 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:14:45.627 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:15:17.538 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:15:17.562 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:15:17.634 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:15:17.634 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:16:20.346 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:16:39.411 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:16:39.450 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:16:39.484 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:16:39.484 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:17:00.823 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:17:00.852 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:17:00.886 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:17:00.886 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:17:26.111 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:17:26.146 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:17:26.180 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:17:26.180 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:18:06.267 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:18:06.287 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:18:06.320 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:18:06.320 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[W 2024-12-23 15:18:18.475 ServerApp] delete /output.txt
+[I 2024-12-23 15:18:20.663 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:20:22.428 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:20:33.707 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:20:33.744 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:20:33.785 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:20:33.785 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:22:23.232 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:24:25.398 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:26:28.913 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:28:33.324 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:30:39.290 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:32:46.662 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 15:34:45.052 ServerApp] delete /malleus_maleficarum.txt
+[I 2024-12-23 15:34:47.283 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:34:50.705 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 15:34:50.727 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:34:50.825 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 15:34:50.825 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 15:36:47.576 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 15:38:56.038 ServerApp] delete /Innocent VIII BULL Summis desiderantes Dec. 5th 1484.txt
+[W 2024-12-23 15:39:01.561 ServerApp] delete /An account of what happened to a boy at Malmoe by witchcraft in the year 1678.txt
+[W 2024-12-23 15:39:06.153 ServerApp] delete /A relation of the strange witchcraft in the Village Mohra, in the years 1669- 1670.txt
+[W 2024-12-23 15:39:30.206 ServerApp] delete /Johannes Nider the ANT HILL circa 1437.txt
+[W 2024-12-23 15:39:37.379 ServerApp] delete /translation of the Canon Episcopi the year 906.txt
+[I 2024-12-23 15:39:44.534 ServerApp] Uploading file to /Village_Mohra_1669_1670.txt
+[I 2024-12-23 15:39:48.322 ServerApp] Uploading file to /Malmoe_boy_1678.txt
+[I 2024-12-23 15:39:52.408 ServerApp] Uploading file to /Johannes_Nider_the_ANT HILL_circa_1437.txt
+[I 2024-12-23 15:39:55.901 ServerApp] Uploading file to /Innocent_VIII_BULL_Summis_desiderantes_1484.txt
+[I 2024-12-23 15:40:00.499 ServerApp] Uploading file to /Canon_Episcopi_year_906.txt
+[W 2024-12-23 15:41:08.735 ServerApp.jupyterlab_git] Fail to execute ['git', 'rev-parse', '--show-prefix']
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 189, in execute
+        code, output, error = await current_loop.run_in_executor(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 150, in call_subprocess
+        process = subprocess.Popen(
+                  ^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1955, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/EmmaRoseHahn'
+[E 2024-12-23 15:41:08.736 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Making_a_witch.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 15:41:08.736 ServerApp] 500 POST /git/EmmaRoseHahn/show_prefix?1734964793392 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 3.64ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Making_a_witch.ipynb
+[W 2024-12-23 15:41:10.500 ServerApp] Notebook EmmaRoseHahn#8090/class_2a.ipynb is not trusted
+[I 2024-12-23 15:41:10.790 ServerApp] Kernel started: e28a6d3e-f06d-4912-a680-4723932c26db
+[I 2024-12-23 15:41:11.245 ServerApp] Connecting to kernel e28a6d3e-f06d-4912-a680-4723932c26db.
+[W 2024-12-23 15:41:12.014 ServerApp] Notebook EmmaRoseHahn#8090/class_2b_solution.ipynb is not trusted
+[I 2024-12-23 15:41:12.319 ServerApp] Kernel started: 23a38ea9-d26f-4629-8c57-e8d66012e1b6
+[I 2024-12-23 15:41:12.881 ServerApp] Connecting to kernel 23a38ea9-d26f-4629-8c57-e8d66012e1b6.
+[W 2024-12-23 15:42:37.084 ServerApp] Notebook EmmaRoseHahn#8090/class_3.ipynb is not trusted
+[I 2024-12-23 15:42:37.496 ServerApp] Kernel started: 62461928-9976-4bb7-8b5a-2d310e798a62
+[I 2024-12-23 15:42:37.919 ServerApp] Connecting to kernel 62461928-9976-4bb7-8b5a-2d310e798a62.
+[I 2024-12-23 15:43:12.144 ServerApp] Saving file at /EmmaRoseHahn#8090/class_2b_solution.ipynb
+[I 2024-12-23 15:44:37.293 ServerApp] Saving file at /EmmaRoseHahn#8090/class_3.ipynb
+[I 2024-12-23 15:44:49.430 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:46:56.283 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 15:48:08.998 ServerApp] delete /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:48:37.839 ServerApp] Uploading file to /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:48:42.988 ServerApp] Saving file at /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:49:03.088 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 15:50:29.249 ServerApp] delete /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:50:39.125 ServerApp] Uploading file to /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:50:45.461 ServerApp] Saving file at /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 15:51:09.858 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 15:57:19.845 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:02:23.056 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:02:26.600 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:02:26.694 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:02:26.768 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:02:26.768 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:04:06.080 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:04:06.099 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:04:06.135 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:04:06.135 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:04:32.073 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:06:39.662 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:08:18.804 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:08:18.823 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:08:18.857 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:08:18.857 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:08:48.358 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:10:55.883 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:13:04.392 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:15:12.064 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:15:18.889 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:15:18.909 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:15:18.991 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:15:18.991 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:16:50.013 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:16:50.032 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:16:50.112 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:16:50.112 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:17:20.608 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:19:27.861 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:25:36.716 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 16:26:34.521 ServerApp.jupyterlab_git] Fail to execute ['git', 'rev-parse', '--show-prefix']
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 189, in execute
+        code, output, error = await current_loop.run_in_executor(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+        result = self.fn(*self.args, **self.kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyterlab_git/git.py", line 150, in call_subprocess
+        process = subprocess.Popen(
+                  ^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1026, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/opt/conda/lib/python3.12/subprocess.py", line 1955, in _execute_child
+        raise child_exception_type(errno_num, err_msg, err_filename)
+    FileNotFoundError: [Errno 2] No such file or directory: '/work/EmmaRoseHahn'
+[E 2024-12-23 16:26:34.522 ServerApp] {
+      "Host": "app-5150647-0.cloud.aau.dk",
+      "Accept": "*/*",
+      "Referer": "https://app-5150647-0.cloud.aau.dk/lab/tree/Making_a_witch.ipynb",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    }
+[E 2024-12-23 16:26:34.522 ServerApp] 500 POST /git/EmmaRoseHahn/show_prefix?1734967519179 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 3.59ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/Making_a_witch.ipynb
+[I 2024-12-23 16:27:06.678 ServerApp] Uploading file to /16th-century-defence-of-witchcraft.pdf
+[I 2024-12-23 16:27:07.019 ServerApp] Saving file at /16th-century-defence-of-witchcraft.pdf
+[I 2024-12-23 16:27:43.889 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:29:54.734 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:31:22.250 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:31:22.289 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:31:22.370 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:31:22.370 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:32:01.154 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:33:16.501 ServerApp] Kernel restarted: 33965c1f-d907-4f03-b15e-2a25fe06853c
+[I 2024-12-23 16:33:16.544 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:33:16.576 ServerApp] Connecting to kernel 33965c1f-d907-4f03-b15e-2a25fe06853c.
+[I 2024-12-23 16:33:16.576 ServerApp] Restoring connection for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
+[I 2024-12-23 16:34:08.798 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 16:35:13.020 ServerApp] delete /16th_century_defence_of_witchcraft.pdf
+[I 2024-12-23 16:36:15.687 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:40:22.199 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:44:32.574 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:46:41.502 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 16:48:05.116 ServerApp] delete /defence_of_witchcraft_16th_century_filtered.txt
+[W 2024-12-23 16:48:20.575 ServerApp] delete /defence_of_witchcraft_16th_century
+[I 2024-12-23 16:48:48.529 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:50:57.992 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:52:02.469 ServerApp] Creating new notebook in 
+[I 2024-12-23 16:52:03.303 ServerApp] Kernel started: e8941913-162a-43d9-bc8b-b42961713e87
+[I 2024-12-23 16:52:03.770 ServerApp] Connecting to kernel e8941913-162a-43d9-bc8b-b42961713e87.
+[I 2024-12-23 16:53:06.649 ServerApp] Saving file at /Untitled.ipynb
+[I 2024-12-23 16:53:07.929 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:55:06.986 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 16:55:19.625 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 16:55:39.068 ServerApp] delete /defense_of_witchcraft_16th_century.txt
+[I 2024-12-23 16:57:07.513 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 16:57:28.242 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 16:59:07.948 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 16:59:39.001 ServerApp] Saving file at /Making_a_witch.ipynb
+[W 2024-12-23 17:00:23.566 ServerApp] IOPub message rate exceeded.
+    The Jupyter server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--ServerApp.iopub_msg_rate_limit`.
+    
+    Current values:
+    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+    ServerApp.rate_limit_window=3.0 (secs)
+    
+[W 2024-12-23 17:00:25.746 ServerApp] iopub messages resumed
+[W 2024-12-23 17:00:26.736 ServerApp] IOPub message rate exceeded.
+    The Jupyter server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--ServerApp.iopub_msg_rate_limit`.
+    
+    Current values:
+    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+    ServerApp.rate_limit_window=3.0 (secs)
+    
+[W 2024-12-23 17:00:28.943 ServerApp] iopub messages resumed
+[W 2024-12-23 17:00:29.928 ServerApp] IOPub message rate exceeded.
+    The Jupyter server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--ServerApp.iopub_msg_rate_limit`.
+    
+    Current values:
+    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+    ServerApp.rate_limit_window=3.0 (secs)
+    
+[W 2024-12-23 17:00:32.143 ServerApp] iopub messages resumed
+[W 2024-12-23 17:00:33.154 ServerApp] IOPub message rate exceeded.
+    The Jupyter server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--ServerApp.iopub_msg_rate_limit`.
+    
+    Current values:
+    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+    ServerApp.rate_limit_window=3.0 (secs)
+    
+[W 2024-12-23 17:00:35.347 ServerApp] iopub messages resumed
+[W 2024-12-23 17:00:36.342 ServerApp] IOPub message rate exceeded.
+    The Jupyter server will temporarily stop sending output
+    to the client in order to avoid crashing it.
+    To change this limit, set the config variable
+    `--ServerApp.iopub_msg_rate_limit`.
+    
+    Current values:
+    ServerApp.iopub_msg_rate_limit=1000.0 (msgs/sec)
+    ServerApp.rate_limit_window=3.0 (secs)
+    
+[W 2024-12-23 17:00:39.310 ServerApp] iopub messages resumed
+[I 2024-12-23 17:01:09.302 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:01:48.892 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 17:03:09.707 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:04:10.862 ServerApp] Saving file at /Making_a_witch.ipynb
+[I 2024-12-23 17:04:21.936 ServerApp] Saving file at /defense_of_witchcraft_16th_century.txt
+[I 2024-12-23 17:04:27.773 ServerApp] Saving file at /Making_a_witch-PREPROCESSING.ipynb
+[I 2024-12-23 17:05:09.931 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:07:10.366 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:09:11.576 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:11:12.233 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:13:13.189 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:15:14.158 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:17:15.090 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:19:15.922 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:21:16.748 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:23:17.873 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:25:20.884 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:27:22.746 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:31:23.790 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:33:24.584 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:35:27.172 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:37:29.236 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:39:31.078 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:41:32.047 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:43:33.175 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:45:34.237 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:47:35.760 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:49:38.157 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:51:39.871 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:53:41.047 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[W 2024-12-23 17:53:59.239 ServerApp] 400 GET /api/contents/malleus_word2vec_model.model?type=file&content=1&hash=1&format=text&1734972763955 (10.14.0.171): /work/malleus_word2vec_model.model is not UTF-8 encoded
+[W 2024-12-23 17:53:59.239 ServerApp] wrote error: '/work/malleus_word2vec_model.model is not UTF-8 encoded'
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/fileio.py", line 536, in _read_file
+        (bcontent.decode("utf8"), "text", bcontent)
+         ^^^^^^^^^^^^^^^^^^^^^^^
+    UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
+    
+    The above exception was the direct cause of the following exception:
+    
+    Traceback (most recent call last):
+      File "/opt/conda/lib/python3.12/site-packages/tornado/web.py", line 1790, in _execute
+        result = await result
+                 ^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/auth/decorator.py", line 73, in inner
+        return await out
+               ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/handlers.py", line 154, in get
+        model = await ensure_async(
+                ^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 198, in ensure_async
+        result = await obj
+                 ^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filemanager.py", line 926, in get
+        model = await self._file_model(
+                ^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/filemanager.py", line 835, in _file_model
+        content, format, bytes_content = await self._read_file(os_path, format, raw=True)  # type: ignore[misc]
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/opt/conda/lib/python3.12/site-packages/jupyter_server/services/contents/fileio.py", line 545, in _read_file
+        raise HTTPError(
+    tornado.web.HTTPError: HTTP 400: bad format (/work/malleus_word2vec_model.model is not UTF-8 encoded)
+[W 2024-12-23 17:53:59.259 ServerApp] 400 GET /api/contents/malleus_word2vec_model.model?type=file&content=1&hash=1&format=text&1734972763955 (e45261b7e72a4d44ae3e6cba48f3ed1e@10.14.0.171) 27.79ms referer=https://app-5150647-0.cloud.aau.dk/lab/tree/malleus_word2vec_model.model
+[I 2024-12-23 17:54:06.854 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:54:13.620 ServerApp] Saving file at /Making_a_witch-PREPROCESSING.ipynb
+[I 2024-12-23 17:56:08.772 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:58:32.898 ServerApp] Saving file at /Making-a-witch-WE.ipynb
+[I 2024-12-23 17:58:35.439 ServerApp] Starting buffering for e28a6d3e-f06d-4912-a680-4723932c26db:d1224ee8-fa2a-4c6a-8737-7ac3bd5e016f
+[I 2024-12-23 17:58:35.440 ServerApp] Starting buffering for 62461928-9976-4bb7-8b5a-2d310e798a62:362556ca-447e-46df-8a47-8c35aa247a78
+[I 2024-12-23 17:58:35.440 ServerApp] Starting buffering for fdbc5f8d-6069-47c8-9190-8c7a39111eae:f4bb66f5-e12a-49bf-a6c2-e8dc134e2232
+[I 2024-12-23 17:58:35.441 ServerApp] Starting buffering for 23a38ea9-d26f-4629-8c57-e8d66012e1b6:e02faba5-01db-4664-866c-b79f0d12673c
+[I 2024-12-23 17:58:35.441 ServerApp] Starting buffering for e8941913-162a-43d9-bc8b-b42961713e87:13331789-5788-483e-9ed3-abfd3c7b2444
+[I 2024-12-23 17:58:35.441 ServerApp] Starting buffering for 33965c1f-d907-4f03-b15e-2a25fe06853c:58b51f75-c133-4dda-9e01-1c1cab0c7ba9
